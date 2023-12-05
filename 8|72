@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,i,d,nr=0,j;
+    cin>>n;
+    for(i=1;nr<=n;i++)
+    {
+        for(d=1;d<=i*2;d++)
+        {
+            cout<<d<<" ";
+            nr++;
+            if(nr==n)
+            {
+                break;
+            }
+        }
+        if(nr==n)
+        {
+            break;
+        }
+        for(j=(i)*2-1;j>=1;j--)
+        {
+            cout<<j<<" ";
+            nr++;
+            if(nr==n)
+            {
+                break;
+            }
+        }
+        if(nr==n)
+        {
+            break;
+        }
+    }
+    return 0;
+}
