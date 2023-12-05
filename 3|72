@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,m,n;
+    cin>>m>>n;
+    a=m;
+    b=n;
+    c=m-n;
+    while(c>0)
+    {
+        a=b;
+        b=c;
+        c=a-b;
+    }
+    if(a==b==1)
+    {
+        cout<<m<<" si "<<n<<" sunt termeni consecutivi in sirul lui fibonacci";
+    }
+    else
+    {
+        cout<<m<<" si "<<n<<" nu sunt termeni consecutivi in sirul lui fibonacci";   
+    }
+
+    return 0;
+}
